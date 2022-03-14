@@ -1,13 +1,137 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  margin: 0.5rem;
+  color: #595857;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bagIcon img {
+  width: 24px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.block {
+  background-color: #faddb4;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.itemclass {
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.itemclass .small {
+  width: 150px;
+  height: 200px;
+}
+.row.center {
+  align-items: center;
+}
+
+button {
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  padding: 5px;
+  margin-top: 60px;
+  border: 0.1rem #404040 solid;
+  background-color: #e69c93;
+  width: 100px;
+  cursor: pointer;
+}
+button.add {
+  background-color: #c3d0de;
+  width: 1.5rem;
+}
+button.remove {
+  background-color: #f5eee4;
+  width: 1.5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+.basketItem {
+  display: flex;
+  flex-direction: row;
+}
+.basketImg {
+  width: 75px;
+}
+.column {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bag {
+  position: absolute;
+  right: 0.5rem;
+  width: 450px;
+  padding: 10px 10px;
+  background-color: #faddb4;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.window {
+  width: 100vw;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  /* width: 90%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h2 {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.onOpenContainer {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.ordername {
+  padding-left: 25px;
 }
